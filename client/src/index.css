@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-atelier-950 text-stone-100 min-h-screen selection:bg-gold-500/20 selection:text-gold-200 overflow-x-hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    @apply font-serif tracking-wide;
+  }
+}
+
+/* Custom delicate luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d2a764;
+}
+
+/* Subtle transitions for buttons and cards */
+.lux-transition {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
