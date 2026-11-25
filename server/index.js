@@ -70,7 +70,7 @@ app.use((req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`=======================================================`);
   console.log(`  ÉLÉGANCE MONDIALE - E-COMMERCE INTERNACIONAL ACTIVO  `);
   console.log(`  Backend en ejecución: http://localhost:${PORT}        `);
